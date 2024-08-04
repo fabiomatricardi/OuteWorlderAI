@@ -3,6 +3,9 @@ How to run LiteMistral150M on your PC
 
 It works with Python 3.11+
 
+<img src='https://github.com/fabiomatricardi/OuteWorlderAI/raw/main/LiteMistral150m.gif' width=800>
+
+
 #### Create a new directory and a virtual environment
 ```
 mkdir OuteAI_LiteMistral150m
