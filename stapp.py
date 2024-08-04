@@ -150,7 +150,7 @@ if myprompt := st.chat_input("What is an AI model?"):
                         assistanttokens = len(encoding.encode(full_response))
                         totaltokens = prompttokens + assistanttokens  
                         st.session_state.speed = totaltokens/totalseconds 
-                        statspeed.markdown(f'💫 speed: {st.session_state.speed}  t/s')                                               
+                        statspeed.markdown(f'💫 speed: {st.session_state.speed:.2f}  t/s')                                               
                 except:
                     pass                 
 
@@ -160,7 +160,7 @@ if myprompt := st.chat_input("What is an AI model?"):
             assistanttokens = len(encoding.encode(full_response))
             totaltokens = prompttokens + assistanttokens
             st.session_state.speed = totaltokens/totalseconds
-            statspeed.markdown(f'💫 speed: {st.session_state.speed}  t/s') 
+            statspeed.markdown(f'💫 speed: {st.session_state.speed:.3f}  t/s') 
             toregister = full_response + f"""
 ```
 
